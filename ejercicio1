@@ -1,0 +1,29 @@
+'''luis hizo un viaje en carro, el cual consumió 20L de gasolina. El trayecto se dividió en 2 partes, en 
+la primera consumió 2/3 de la gasolina que tenía en el tanque y en la segunda consumió la mitad de lo que
+le quedaba en el tanque.
+'''
+'''A. ¿Cuántos litros de gasolina tenía en el tanque? Ezplique el proceso de analisis de la situacion.'''
+'''
+a: primer tramo 
+b: segundo tramo
+L: litros de gasolina total
+r: gasolina del segundo tramo
+''' 
+L = 20
+a = round((2/3)*L,2)
+r = L - a
+b = (1/2)*r
+print(f'En el primer tramo consumió {a}L dejando un resto de 1/3 de gasolina que equivalen a {r}L')
+###
+'''B. Luis gasta durante el viaje $190.000 y él realiza x viajes durante el mes, ¿cuál es la expresión 
+matemática para encontrar el gasto de la gasolina en los viajes?'''
+'''x: número de viajes por mes
+G: gasto total a lo largo del mes
+c: costo por viaje
+'''
+x = int(input('Dime cuántas veces viajó este mes: '))
+c = 190000
+G = c * x 
+print('La expresión matemática para encontrar el gasto por x cantidad de viajes será: G = c * x ')
+print(f'Si el total de veces que viajó este mes fueron {x} entonces el costo total de gasolina fue de {G}$')
+
